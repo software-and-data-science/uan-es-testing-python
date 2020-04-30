@@ -23,7 +23,7 @@ jobs:
             command: |
                 pipenv run python test_simple.py test
       # Step 4: Sonar cloud report
-            - sonarcloud/scan
+      - sonarcloud/scan
 workflows:
   main:
     jobs:
